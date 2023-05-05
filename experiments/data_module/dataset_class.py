@@ -64,7 +64,7 @@ class ConcordDataset(DGLDataset):
     def __getitem__(self, idx):
         graph = self.graphs[idx]
 
-        file_path = os.path.join(f"{self.root}/{self.repr.upper()}", self.projects[idx],  graph)
+        file_path = os.path.join(f"{self.root}/classes/{self.repr.upper()}", self.projects[idx],  graph)
         
         nx_graph = load_nx_from_json(file_path)
         label = self.labels[idx]

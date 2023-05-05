@@ -1,0 +1,8 @@
+dgl==1.0.1
+dgl-gpu==0.8.0
+pytorch_lightning==1.9.1
+transformers==4.26.1
+networkx==3.0
+pandas
+tensorboard
+tensorboardX

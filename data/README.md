@@ -24,5 +24,7 @@ To generate classes files run the following command:
 
 `python3 classes_generator.py`  
 
-By the end of this step, the JSON files will be located in `classes/<REPRESENTATION>/<PROJECT>/<FILE>.json`
+By the end of this step, the JSON files will be located in `classes/<REPRESENTATION>/<PROJECT>/<FILE>.json`.  
+
+The classes generation can take a while (up to 3hrs). We have uploaded them on Google Drive too for faster access: https://drive.google.com/file/d/1HtzDoCwBNN7dnFvXkW3WHb0CY9o5eFno/view?usp=sharing
 

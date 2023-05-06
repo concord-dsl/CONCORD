@@ -35,6 +35,8 @@ if __name__ == '__main__':
     torch_setup(seed=4096)
     #torch.multiprocessing.set_start_method('spawn')
     parser = argparse.ArgumentParser()
+    parser.add_argument('--root', type=str, help='Root directory to JSON files',
+                        required=True)
     parser.add_argument('--model_type', type=str, help='Type of the model (GCN/GGNN/GAT)',
                         choices=['GCN', 'GGNN', 'GAT', 'GGNN-GAP'], default='GGNN')
     parser.add_argument('--repr', type=str, required=True, help='Name of the representation.')

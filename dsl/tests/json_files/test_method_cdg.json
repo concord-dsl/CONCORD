@@ -1,0 +1,35 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {
+        "name": "testMethod"
+    },
+    "nodes": [
+        {
+            "label": "(<operator>.greaterThan,k > 1)",
+            "id": "1000112"
+        },
+        {
+            "label": "(RETURN,return \\\"k\\\";,return \\\"k\\\";)",
+            "id": "1000116"
+        },
+        {
+            "label": "(RETURN,return \\\"a\\\";,return \\\"a\\\";)",
+            "id": "1000120"
+        }
+    ],
+    "links": [
+        {
+            "label": "CDG: ",
+            "source": "1000112",
+            "target": "1000120",
+            "key": 0
+        },
+        {
+            "label": "CDG: ",
+            "source": "1000112",
+            "target": "1000116",
+            "key": 0
+        }
+    ]
+}

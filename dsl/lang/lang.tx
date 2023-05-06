@@ -1,0 +1,92 @@
+Main:
+    'Tasks' '{'
+        tasks*=Task
+    '}'
+    'Representations' '{'
+        representations+= Representation
+    '}'
+;
+
+Representation:
+    name=ID '{'
+        repo_dirs = STRING
+        output_dir = STRING
+        base_graph_types+= BaseGraphType
+        tasks+=[Task]
+    '}'
+;
+
+BaseGraphType:
+    'AST'|'CFG'|'PDG'
+;
+
+TasksBlock:
+    'tasks' '{'
+        tasks*=Task
+    '}'
+;
+
+Task:
+    name=ID '{'
+        operations+= Operation
+        'conditions' '{'
+        conditions+=Condition
+        '}'
+    '}'
+;
+
+Operation:
+    graph_element=GraphElement operation_type=OperationType graph_element_type=GraphElementType
+;
+
+GraphElement:
+    'Node'|'Edge'
+;
+
+OperationType:
+    'add'|'remove'
+;
+
+GraphElementType:
+    EdgeType|NodeType
+;
+
+EdgeType:
+    'next_token'|'next_sibling'|'for_cfg'|'while_cfg'|'last_read_write'|'guarded_by'|'returns_to'|'computed_from'|'last_lexical_use'
+;
+
+NodeType:
+    'print'|'logging'|'sys_exit'|'simple_assignment'
+;
+
+Condition:
+    CodeCondition|StructuralCondition
+;
+
+CodeCondition:
+    action=CodeConditionAction code_block=CodeBlock
+;
+
+CodeConditionAction:
+    'exclude'|'include'
+;
+
+StructuralCondition:
+    graph_element=GraphElement property=StructuralConditionProperty spec=StructuralConditionSpec
+;
+
+StructuralConditionProperty:
+    'count'
+;
+
+StructuralConditionSpec:
+    '['lbound=NUMBER ','ubound=NUMBER ']'
+;
+
+CodeBlock:
+    'catch'|'for'|'while'|'if'|'else'
+;
+
+Comment:
+  /\/\*(.|\n)*?\*\// | /\/\/.*?$/
+;

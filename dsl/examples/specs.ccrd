@@ -1,0 +1,56 @@
+Tasks {
+
+    task1 {
+        Edge add next_token
+        Edge add for_cfg
+        Edge add while_cfg
+        Edge add computed_from
+        Edge add guarded_by
+        conditions {
+            exclude while
+            exclude if
+        }
+    }
+    task2 {
+        Edge add next_token
+        Edge add for_cfg
+        Edge add while_cfg
+        Edge add computed_from
+        Edge add guarded_by
+        Node remove simple_assignment
+        conditions {
+            exclude while
+            exclude if
+        }
+    }
+    task3 {
+        Edge add next_token
+        Edge add for_cfg
+        Edge add while_cfg
+        Edge add computed_from
+        Edge add guarded_by
+        Node remove print
+        conditions {
+            exclude while
+            exclude if
+        }
+    }
+}
+
+Representations {
+    r1 {
+        "./repos.csv"
+        AST
+        task1
+    }
+    r2 {
+        "./repos.csv"
+        AST
+        task2
+    }
+    r3 {
+        "./repos.csv"
+        AST
+        task3
+    }
+}

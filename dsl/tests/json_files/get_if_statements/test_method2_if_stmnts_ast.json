@@ -1,0 +1,155 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {
+        "name": "fooIf"
+    },
+    "nodes": [
+        {
+            "label": "(METHOD,fooIf)",
+            "id": "1000101"
+        },
+        {
+            "label": "(PARAM,this)",
+            "id": "1000102"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000103"
+        },
+        {
+            "label": "(LOCAL,int c: int)",
+            "id": "1000104"
+        },
+        {
+            "label": "(<operator>.assignment,c = 1)",
+            "id": "1000105"
+        },
+        {
+            "label": "(IDENTIFIER,c,c = 1)",
+            "id": "1000106"
+        },
+        {
+            "label": "(LITERAL,1,c = 1)",
+            "id": "1000107"
+        },
+        {
+            "label": "(CONTROL_STRUCTURE,if (c == 1),if (c == 1))",
+            "id": "1000108"
+        },
+        {
+            "label": "(<operator>.equals,c == 1)",
+            "id": "1000109"
+        },
+        {
+            "label": "(IDENTIFIER,c,c == 1)",
+            "id": "1000110"
+        },
+        {
+            "label": "(LITERAL,1,c == 1)",
+            "id": "1000111"
+        },
+        {
+            "label": "(print,System.out.print(\\\"EQUALS\\\"))",
+            "id": "1000112"
+        },
+        {
+            "label": "(IDENTIFIER,System.out,System.out.print(\\\"EQUALS\\\"))",
+            "id": "1000113"
+        },
+        {
+            "label": "(LITERAL,\\\"EQUALS\\\",System.out.print(\\\"EQUALS\\\"))",
+            "id": "1000114"
+        },
+        {
+            "label": "(METHOD_RETURN,void)",
+            "id": "1000115"
+        }
+    ],
+    "links": [
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000102",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000103",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000115",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000104",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000105",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000108",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000105",
+            "target": "1000106",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000105",
+            "target": "1000107",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000108",
+            "target": "1000109",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000108",
+            "target": "1000112",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000109",
+            "target": "1000110",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000109",
+            "target": "1000111",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000112",
+            "target": "1000113",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000112",
+            "target": "1000114",
+            "key": 0
+        }
+    ]
+}

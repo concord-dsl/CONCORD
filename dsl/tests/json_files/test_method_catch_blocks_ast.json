@@ -1,0 +1,725 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {
+        "name": "catchMethod"
+    },
+    "nodes": [
+        {
+            "label": "(METHOD,catchMethod)",
+            "id": "1000101"
+        },
+        {
+            "label": "(PARAM,this)",
+            "id": "1000102"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000103"
+        },
+        {
+            "label": "(CONTROL_STRUCTURE,try,try)",
+            "id": "1000104"
+        },
+        {
+            "label": "(BLOCK,try,try)",
+            "id": "1000105"
+        },
+        {
+            "label": "(LOCAL,int[] a: int[])",
+            "id": "1000106"
+        },
+        {
+            "label": "(<operator>.assignment,a = new int[5])",
+            "id": "1000107"
+        },
+        {
+            "label": "(IDENTIFIER,a,a = new int[5])",
+            "id": "1000108"
+        },
+        {
+            "label": "(<operator>.arrayCreator,new int[5])",
+            "id": "1000109"
+        },
+        {
+            "label": "(LITERAL,5,new int[5])",
+            "id": "1000110"
+        },
+        {
+            "label": "(<operator>.assignment,a[5] = 30 / 0)",
+            "id": "1000111"
+        },
+        {
+            "label": "(<operator>.indexAccess,a[5])",
+            "id": "1000112"
+        },
+        {
+            "label": "(IDENTIFIER,a,a[5] = 30 / 0)",
+            "id": "1000113"
+        },
+        {
+            "label": "(LITERAL,5,a[5] = 30 / 0)",
+            "id": "1000114"
+        },
+        {
+            "label": "(<operator>.division,30 / 0)",
+            "id": "1000115"
+        },
+        {
+            "label": "(LITERAL,30,30 / 0)",
+            "id": "1000116"
+        },
+        {
+            "label": "(LITERAL,0,30 / 0)",
+            "id": "1000117"
+        },
+        {
+            "label": "(BLOCK,catch,catch)",
+            "id": "1000118"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000119"
+        },
+        {
+            "label": "(println,System.err.println(e.getStackTrace()))",
+            "id": "1000120"
+        },
+        {
+            "label": "(IDENTIFIER,System.err,System.err.println(e.getStackTrace()))",
+            "id": "1000121"
+        },
+        {
+            "label": "(getStackTrace,e.getStackTrace())",
+            "id": "1000122"
+        },
+        {
+            "label": "(IDENTIFIER,e,e.getStackTrace())",
+            "id": "1000123"
+        },
+        {
+            "label": "(println,System.out.println(\\\"Arithmetic Exception occurs\\\"))",
+            "id": "1000124"
+        },
+        {
+            "label": "(IDENTIFIER,System.out,System.out.println(\\\"Arithmetic Exception occurs\\\"))",
+            "id": "1000125"
+        },
+        {
+            "label": "(LITERAL,\\\"Arithmetic Exception occurs\\\",System.out.println(\\\"Arithmetic Exception occurs\\\"))",
+            "id": "1000126"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000127"
+        },
+        {
+            "label": "(println,System.err.println(e.getStackTrace()))",
+            "id": "1000128"
+        },
+        {
+            "label": "(IDENTIFIER,System.err,System.err.println(e.getStackTrace()))",
+            "id": "1000129"
+        },
+        {
+            "label": "(getStackTrace,e.getStackTrace())",
+            "id": "1000130"
+        },
+        {
+            "label": "(IDENTIFIER,e,e.getStackTrace())",
+            "id": "1000131"
+        },
+        {
+            "label": "(println,System.out.println(\\\"ArrayIndexOutOfBounds Exception occurs\\\"))",
+            "id": "1000132"
+        },
+        {
+            "label": "(IDENTIFIER,System.out,System.out.println(\\\"ArrayIndexOutOfBounds Exception occurs\\\"))",
+            "id": "1000133"
+        },
+        {
+            "label": "(LITERAL,\\\"ArrayIndexOutOfBounds Exception occurs\\\",System.out.println(\\\"ArrayIndexOutOfBounds Exception occurs\\\"))",
+            "id": "1000134"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000135"
+        },
+        {
+            "label": "(println,System.err.println(e.getStackTrace()))",
+            "id": "1000136"
+        },
+        {
+            "label": "(IDENTIFIER,System.err,System.err.println(e.getStackTrace()))",
+            "id": "1000137"
+        },
+        {
+            "label": "(getStackTrace,e.getStackTrace())",
+            "id": "1000138"
+        },
+        {
+            "label": "(IDENTIFIER,e,e.getStackTrace())",
+            "id": "1000139"
+        },
+        {
+            "label": "(println,System.out.println(\\\"Parent Exception occurs\\\"))",
+            "id": "1000140"
+        },
+        {
+            "label": "(IDENTIFIER,System.out,System.out.println(\\\"Parent Exception occurs\\\"))",
+            "id": "1000141"
+        },
+        {
+            "label": "(LITERAL,\\\"Parent Exception occurs\\\",System.out.println(\\\"Parent Exception occurs\\\"))",
+            "id": "1000142"
+        },
+        {
+            "label": "(LOCAL,String s: java.lang.String)",
+            "id": "1000143"
+        },
+        {
+            "label": "(<operator>.assignment,s = \\\"Hello World! \\\")",
+            "id": "1000144"
+        },
+        {
+            "label": "(IDENTIFIER,s,s = \\\"Hello World! \\\")",
+            "id": "1000145"
+        },
+        {
+            "label": "(LITERAL,\\\"Hello World! \\\",s = \\\"Hello World! \\\")",
+            "id": "1000146"
+        },
+        {
+            "label": "(LOCAL,byte[] data: byte[])",
+            "id": "1000147"
+        },
+        {
+            "label": "(<operator>.assignment,data = s.getBytes())",
+            "id": "1000148"
+        },
+        {
+            "label": "(IDENTIFIER,data,data = s.getBytes())",
+            "id": "1000149"
+        },
+        {
+            "label": "(getBytes,s.getBytes())",
+            "id": "1000150"
+        },
+        {
+            "label": "(IDENTIFIER,s,s.getBytes())",
+            "id": "1000151"
+        },
+        {
+            "label": "(LOCAL,Path p: java.nio.file.Path)",
+            "id": "1000152"
+        },
+        {
+            "label": "(<operator>.assignment,p = Paths.get(\\\"./logfile.txt\\\"))",
+            "id": "1000153"
+        },
+        {
+            "label": "(IDENTIFIER,p,p = Paths.get(\\\"./logfile.txt\\\"))",
+            "id": "1000154"
+        },
+        {
+            "label": "(get,Paths.get(\\\"./logfile.txt\\\"))",
+            "id": "1000155"
+        },
+        {
+            "label": "(IDENTIFIER,Paths,Paths.get(\\\"./logfile.txt\\\"))",
+            "id": "1000156"
+        },
+        {
+            "label": "(LITERAL,\\\"./logfile.txt\\\",Paths.get(\\\"./logfile.txt\\\"))",
+            "id": "1000157"
+        },
+        {
+            "label": "(CONTROL_STRUCTURE,try,try)",
+            "id": "1000158"
+        },
+        {
+            "label": "(BLOCK,try,try)",
+            "id": "1000159"
+        },
+        {
+            "label": "(write,out.write(data, 0, data.length))",
+            "id": "1000160"
+        },
+        {
+            "label": "(IDENTIFIER,out,out.write(data, 0, data.length))",
+            "id": "1000161"
+        },
+        {
+            "label": "(IDENTIFIER,data,out.write(data, 0, data.length))",
+            "id": "1000162"
+        },
+        {
+            "label": "(LITERAL,0,out.write(data, 0, data.length))",
+            "id": "1000163"
+        },
+        {
+            "label": "(<operator>.fieldAccess,data.length)",
+            "id": "1000164"
+        },
+        {
+            "label": "(FIELD_IDENTIFIER,length,length)",
+            "id": "1000165"
+        },
+        {
+            "label": "(IDENTIFIER,data,out.write(data, 0, data.length))",
+            "id": "1000166"
+        },
+        {
+            "label": "(BLOCK,catch,catch)",
+            "id": "1000167"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000168"
+        },
+        {
+            "label": "(println,System.err.println(x))",
+            "id": "1000169"
+        },
+        {
+            "label": "(IDENTIFIER,System.err,System.err.println(x))",
+            "id": "1000170"
+        },
+        {
+            "label": "(IDENTIFIER,x,System.err.println(x))",
+            "id": "1000171"
+        },
+        {
+            "label": "(METHOD_RETURN,void)",
+            "id": "1000172"
+        }
+    ],
+    "links": [
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000102",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000103",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000172",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000104",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000143",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000144",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000147",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000148",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000152",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000153",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000103",
+            "target": "1000158",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000105",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000118",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000105",
+            "target": "1000106",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000105",
+            "target": "1000107",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000105",
+            "target": "1000111",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000107",
+            "target": "1000108",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000107",
+            "target": "1000109",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000109",
+            "target": "1000110",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000111",
+            "target": "1000112",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000111",
+            "target": "1000115",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000112",
+            "target": "1000113",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000112",
+            "target": "1000114",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000115",
+            "target": "1000116",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000115",
+            "target": "1000117",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000118",
+            "target": "1000119",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000118",
+            "target": "1000127",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000118",
+            "target": "1000135",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000119",
+            "target": "1000120",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000119",
+            "target": "1000124",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000120",
+            "target": "1000121",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000120",
+            "target": "1000122",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000122",
+            "target": "1000123",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000124",
+            "target": "1000125",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000124",
+            "target": "1000126",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000127",
+            "target": "1000128",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000127",
+            "target": "1000132",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000128",
+            "target": "1000129",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000128",
+            "target": "1000130",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000130",
+            "target": "1000131",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000132",
+            "target": "1000133",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000132",
+            "target": "1000134",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000135",
+            "target": "1000136",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000135",
+            "target": "1000140",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000136",
+            "target": "1000137",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000136",
+            "target": "1000138",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000138",
+            "target": "1000139",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000140",
+            "target": "1000141",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000140",
+            "target": "1000142",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000144",
+            "target": "1000145",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000144",
+            "target": "1000146",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000148",
+            "target": "1000149",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000148",
+            "target": "1000150",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000150",
+            "target": "1000151",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000153",
+            "target": "1000154",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000153",
+            "target": "1000155",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000155",
+            "target": "1000156",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000155",
+            "target": "1000157",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000158",
+            "target": "1000159",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000158",
+            "target": "1000167",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000159",
+            "target": "1000160",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000160",
+            "target": "1000161",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000160",
+            "target": "1000162",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000160",
+            "target": "1000163",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000160",
+            "target": "1000164",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000164",
+            "target": "1000166",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000164",
+            "target": "1000165",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000167",
+            "target": "1000168",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000168",
+            "target": "1000169",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000169",
+            "target": "1000170",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000169",
+            "target": "1000171",
+            "key": 0
+        }
+    ]
+}

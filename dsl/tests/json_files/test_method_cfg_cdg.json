@@ -1,0 +1,93 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {
+        "name": "testMethod"
+    },
+    "nodes": [
+        {
+            "label": "(<operator>.assignment,k = a + 1)",
+            "id": "1000106"
+        },
+        {
+            "label": "(<operator>.addition,a + 1)",
+            "id": "1000108"
+        },
+        {
+            "label": "(<operator>.greaterThan,k > 1)",
+            "id": "1000112"
+        },
+        {
+            "label": "(RETURN,return \\\"k\\\";,return \\\"k\\\";)",
+            "id": "1000116"
+        },
+        {
+            "label": "(RETURN,return \\\"a\\\";,return \\\"a\\\";)",
+            "id": "1000120"
+        },
+        {
+            "label": "(METHOD,testMethod)",
+            "id": "1000101"
+        },
+        {
+            "label": "(METHOD_RETURN,java.lang.String)",
+            "id": "1000122"
+        }
+    ],
+    "links": [
+        {
+            "label": "CFG: ",
+            "source": "1000106",
+            "target": "1000112",
+            "key": 0
+        },
+        {
+            "label": "CFG: ",
+            "source": "1000108",
+            "target": "1000106",
+            "key": 0
+        },
+        {
+            "label": "CFG: ",
+            "source": "1000112",
+            "target": "1000116",
+            "key": 0
+        },
+        {
+            "label": "CDG: ",
+            "source": "1000112",
+            "target": "1000116",
+            "key": 1
+        },
+        {
+            "label": "CFG: ",
+            "source": "1000112",
+            "target": "1000120",
+            "key": 0
+        },
+        {
+            "label": "CDG: ",
+            "source": "1000112",
+            "target": "1000120",
+            "key": 1
+        },
+        {
+            "label": "CFG: ",
+            "source": "1000116",
+            "target": "1000122",
+            "key": 0
+        },
+        {
+            "label": "CFG: ",
+            "source": "1000120",
+            "target": "1000122",
+            "key": 0
+        },
+        {
+            "label": "CFG: ",
+            "source": "1000101",
+            "target": "1000108",
+            "key": 0
+        }
+    ]
+}

@@ -1,0 +1,7 @@
+digraph "testMethod" {  
+"1000112" [label = "(<operator>.greaterThan,k > 1)" ]
+"1000116" [label = "(RETURN,return \"k\";,return \"k\";)" ]
+"1000120" [label = "(RETURN,return \"a\";,return \"a\";)" ]
+  "1000112" -> "1000120"  [ label = "CDG: "] 
+  "1000112" -> "1000116"  [ label = "CDG: "] 
+}

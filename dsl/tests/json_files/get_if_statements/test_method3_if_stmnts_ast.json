@@ -1,0 +1,435 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {
+        "name": "methodWithIfs"
+    },
+    "nodes": [
+        {
+            "label": "(METHOD,methodWithIfs)",
+            "id": "1000101"
+        },
+        {
+            "label": "(PARAM,this)",
+            "id": "1000102"
+        },
+        {
+            "label": "(PARAM,List<Integer> list)",
+            "id": "1000103"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000104"
+        },
+        {
+            "label": "(LOCAL,String a: java.lang.String)",
+            "id": "1000105"
+        },
+        {
+            "label": "(<operator>.assignment,a = new String(\\\"myString\\\"))",
+            "id": "1000106"
+        },
+        {
+            "label": "(IDENTIFIER,a,a = new String(\\\"myString\\\"))",
+            "id": "1000107"
+        },
+        {
+            "label": "(<operator>.alloc,new String(\\\"myString\\\"))",
+            "id": "1000108"
+        },
+        {
+            "label": "(<init>,new String(\\\"myString\\\"))",
+            "id": "1000109"
+        },
+        {
+            "label": "(IDENTIFIER,a,new String(\\\"myString\\\"))",
+            "id": "1000110"
+        },
+        {
+            "label": "(LITERAL,\\\"myString\\\",new String(\\\"myString\\\"))",
+            "id": "1000111"
+        },
+        {
+            "label": "(LOCAL,int a_var: int)",
+            "id": "1000112"
+        },
+        {
+            "label": "(<operator>.assignment,a_var = 5)",
+            "id": "1000113"
+        },
+        {
+            "label": "(IDENTIFIER,a_var,a_var = 5)",
+            "id": "1000114"
+        },
+        {
+            "label": "(LITERAL,5,a_var = 5)",
+            "id": "1000115"
+        },
+        {
+            "label": "(LOCAL,boolean b_var: boolean)",
+            "id": "1000116"
+        },
+        {
+            "label": "(<operator>.assignment,b_var = true)",
+            "id": "1000117"
+        },
+        {
+            "label": "(IDENTIFIER,b_var,b_var = true)",
+            "id": "1000118"
+        },
+        {
+            "label": "(LITERAL,true,b_var = true)",
+            "id": "1000119"
+        },
+        {
+            "label": "(LOCAL,char c_var: char)",
+            "id": "1000120"
+        },
+        {
+            "label": "(<operator>.assignment,c_var = 'c')",
+            "id": "1000121"
+        },
+        {
+            "label": "(IDENTIFIER,c_var,c_var = 'c')",
+            "id": "1000122"
+        },
+        {
+            "label": "(LITERAL,'c',c_var = 'c')",
+            "id": "1000123"
+        },
+        {
+            "label": "(CONTROL_STRUCTURE,if ((a_var < (int) c_var) && (!b_var || c_var > 'a')),if ((a_var < (int) c_var) && (!b_var || c_var > 'a')))",
+            "id": "1000124"
+        },
+        {
+            "label": "(<operator>.logicalAnd,(a_var < (int) c_var) && (!b_var || c_var > 'a'))",
+            "id": "1000125"
+        },
+        {
+            "label": "(<operator>.lessThan,a_var < (int) c_var)",
+            "id": "1000126"
+        },
+        {
+            "label": "(IDENTIFIER,a_var,a_var < (int) c_var)",
+            "id": "1000127"
+        },
+        {
+            "label": "(<operator>.cast,(int) c_var)",
+            "id": "1000128"
+        },
+        {
+            "label": "(TYPE_REF,int,int)",
+            "id": "1000129"
+        },
+        {
+            "label": "(IDENTIFIER,c_var,(int) c_var)",
+            "id": "1000130"
+        },
+        {
+            "label": "(<operator>.logicalOr,!b_var || c_var > 'a')",
+            "id": "1000131"
+        },
+        {
+            "label": "(<operator>.logicalNot,!b_var)",
+            "id": "1000132"
+        },
+        {
+            "label": "(IDENTIFIER,b_var,!b_var)",
+            "id": "1000133"
+        },
+        {
+            "label": "(<operator>.greaterThan,c_var > 'a')",
+            "id": "1000134"
+        },
+        {
+            "label": "(IDENTIFIER,c_var,c_var > 'a')",
+            "id": "1000135"
+        },
+        {
+            "label": "(LITERAL,'a',c_var > 'a')",
+            "id": "1000136"
+        },
+        {
+            "label": "(RETURN,return a.concat(\\\"_anotherString\\\");,return a.concat(\\\"_anotherString\\\");)",
+            "id": "1000137"
+        },
+        {
+            "label": "(concat,a.concat(\\\"_anotherString\\\"))",
+            "id": "1000138"
+        },
+        {
+            "label": "(IDENTIFIER,a,a.concat(\\\"_anotherString\\\"))",
+            "id": "1000139"
+        },
+        {
+            "label": "(LITERAL,\\\"_anotherString\\\",a.concat(\\\"_anotherString\\\"))",
+            "id": "1000140"
+        },
+        {
+            "label": "(RETURN,return a;,return a;)",
+            "id": "1000141"
+        },
+        {
+            "label": "(IDENTIFIER,a,return a;)",
+            "id": "1000142"
+        },
+        {
+            "label": "(METHOD_RETURN,java.lang.String)",
+            "id": "1000143"
+        }
+    ],
+    "links": [
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000102",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000103",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000104",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000143",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000105",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000106",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000109",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000112",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000113",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000116",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000117",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000120",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000121",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000124",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000141",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000106",
+            "target": "1000107",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000106",
+            "target": "1000108",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000109",
+            "target": "1000110",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000109",
+            "target": "1000111",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000113",
+            "target": "1000114",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000113",
+            "target": "1000115",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000117",
+            "target": "1000118",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000117",
+            "target": "1000119",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000121",
+            "target": "1000122",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000121",
+            "target": "1000123",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000124",
+            "target": "1000125",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000124",
+            "target": "1000137",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000125",
+            "target": "1000126",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000125",
+            "target": "1000131",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000126",
+            "target": "1000127",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000126",
+            "target": "1000128",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000128",
+            "target": "1000129",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000128",
+            "target": "1000130",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000131",
+            "target": "1000132",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000131",
+            "target": "1000134",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000132",
+            "target": "1000133",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000134",
+            "target": "1000135",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000134",
+            "target": "1000136",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000137",
+            "target": "1000138",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000138",
+            "target": "1000139",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000138",
+            "target": "1000140",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000141",
+            "target": "1000142",
+            "key": 0
+        }
+    ]
+}

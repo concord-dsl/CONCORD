@@ -1,0 +1,235 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {
+        "name": "count"
+    },
+    "nodes": [
+        {
+            "label": "(METHOD,count)",
+            "id": "1000101"
+        },
+        {
+            "label": "(PARAM,this)",
+            "id": "1000102"
+        },
+        {
+            "label": "(PARAM,int a)",
+            "id": "1000103"
+        },
+        {
+            "label": "(PARAM,int[] b)",
+            "id": "1000104"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000105"
+        },
+        {
+            "label": "(LOCAL,int result: int)",
+            "id": "1000106"
+        },
+        {
+            "label": "(<operator>.assignment,result = 0)",
+            "id": "1000107"
+        },
+        {
+            "label": "(IDENTIFIER,result,result = 0)",
+            "id": "1000108"
+        },
+        {
+            "label": "(LITERAL,0,result = 0)",
+            "id": "1000109"
+        },
+        {
+            "label": "(CONTROL_STRUCTURE,<empty>,<empty>)",
+            "id": "1000110"
+        },
+        {
+            "label": "(IDENTIFIER,b,<empty>)",
+            "id": "1000111"
+        },
+        {
+            "label": "(LOCAL,int j: int)",
+            "id": "1000112"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000113"
+        },
+        {
+            "label": "(CONTROL_STRUCTURE,if (a == j),if (a == j))",
+            "id": "1000114"
+        },
+        {
+            "label": "(<operator>.equals,a == j)",
+            "id": "1000115"
+        },
+        {
+            "label": "(IDENTIFIER,a,a == j)",
+            "id": "1000116"
+        },
+        {
+            "label": "(IDENTIFIER,j,a == j)",
+            "id": "1000117"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000118"
+        },
+        {
+            "label": "(<operator>.postIncrement,result++)",
+            "id": "1000119"
+        },
+        {
+            "label": "(IDENTIFIER,result,result++)",
+            "id": "1000120"
+        },
+        {
+            "label": "(RETURN,return result;,return result;)",
+            "id": "1000121"
+        },
+        {
+            "label": "(IDENTIFIER,result,return result;)",
+            "id": "1000122"
+        },
+        {
+            "label": "(METHOD_RETURN,int)",
+            "id": "1000123"
+        }
+    ],
+    "links": [
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000102",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000103",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000104",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000105",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000123",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000105",
+            "target": "1000106",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000105",
+            "target": "1000107",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000105",
+            "target": "1000110",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000105",
+            "target": "1000121",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000107",
+            "target": "1000108",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000107",
+            "target": "1000109",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000110",
+            "target": "1000111",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000110",
+            "target": "1000112",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000110",
+            "target": "1000113",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000113",
+            "target": "1000114",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000114",
+            "target": "1000115",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000114",
+            "target": "1000118",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000115",
+            "target": "1000116",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000115",
+            "target": "1000117",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000118",
+            "target": "1000119",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000119",
+            "target": "1000120",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000121",
+            "target": "1000122",
+            "key": 0
+        }
+    ]
+}

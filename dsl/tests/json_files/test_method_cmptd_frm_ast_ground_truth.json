@@ -1,0 +1,387 @@
+{
+    "directed": true,
+    "multigraph": true,
+    "graph": {
+        "name": "testMethod"
+    },
+    "nodes": [
+        {
+            "label": "(METHOD,testMethod)",
+            "id": "1000101"
+        },
+        {
+            "label": "(PARAM,this)",
+            "id": "1000102"
+        },
+        {
+            "label": "(PARAM,int a)",
+            "id": "1000103"
+        },
+        {
+            "label": "(BLOCK,<empty>,<empty>)",
+            "id": "1000104"
+        },
+        {
+            "label": "(LOCAL,int k: int)",
+            "id": "1000105"
+        },
+        {
+            "label": "(<operator>.assignment,k = 2)",
+            "id": "1000106"
+        },
+        {
+            "label": "(IDENTIFIER,k,k = 2)",
+            "id": "1000107"
+        },
+        {
+            "label": "(LITERAL,2,k = 2)",
+            "id": "1000108"
+        },
+        {
+            "label": "(LOCAL,int p: int)",
+            "id": "1000109"
+        },
+        {
+            "label": "(<operator>.assignment,p = 3)",
+            "id": "1000110"
+        },
+        {
+            "label": "(IDENTIFIER,p,p = 3)",
+            "id": "1000111"
+        },
+        {
+            "label": "(LITERAL,3,p = 3)",
+            "id": "1000112"
+        },
+        {
+            "label": "(LOCAL,int result: int)",
+            "id": "1000113"
+        },
+        {
+            "label": "(<operator>.assignment,result = k + p + 3 * a)",
+            "id": "1000114"
+        },
+        {
+            "label": "(IDENTIFIER,result,result = k + p + 3 * a)",
+            "id": "1000115"
+        },
+        {
+            "label": "(<operator>.addition,k + p + 3 * a)",
+            "id": "1000116"
+        },
+        {
+            "label": "(<operator>.addition,k + p)",
+            "id": "1000117"
+        },
+        {
+            "label": "(IDENTIFIER,k,k + p)",
+            "id": "1000118"
+        },
+        {
+            "label": "(IDENTIFIER,p,k + p)",
+            "id": "1000119"
+        },
+        {
+            "label": "(<operator>.multiplication,3 * a)",
+            "id": "1000120"
+        },
+        {
+            "label": "(LITERAL,3,3 * a)",
+            "id": "1000121"
+        },
+        {
+            "label": "(IDENTIFIER,a,3 * a)",
+            "id": "1000122"
+        },
+        {
+            "label": "(<operator>.assignmentPlus,k += result & (p + k + a))",
+            "id": "1000123"
+        },
+        {
+            "label": "(IDENTIFIER,k,k += result & (p + k + a))",
+            "id": "1000124"
+        },
+        {
+            "label": "(<operator>.and,result & (p + k + a))",
+            "id": "1000125"
+        },
+        {
+            "label": "(IDENTIFIER,result,result & (p + k + a))",
+            "id": "1000126"
+        },
+        {
+            "label": "(<operator>.addition,p + k + a)",
+            "id": "1000127"
+        },
+        {
+            "label": "(<operator>.addition,p + k)",
+            "id": "1000128"
+        },
+        {
+            "label": "(IDENTIFIER,p,p + k)",
+            "id": "1000129"
+        },
+        {
+            "label": "(IDENTIFIER,k,p + k)",
+            "id": "1000130"
+        },
+        {
+            "label": "(IDENTIFIER,a,p + k + a)",
+            "id": "1000131"
+        },
+        {
+            "label": "(RETURN,return \\\"foo\\\";,return \\\"foo\\\";)",
+            "id": "1000132"
+        },
+        {
+            "label": "(LITERAL,\\\"foo\\\",return \\\"foo\\\";)",
+            "id": "1000133"
+        },
+        {
+            "label": "(METHOD_RETURN,java.lang.String)",
+            "id": "1000134"
+        }
+    ],
+    "links": [
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000102",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000103",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000104",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000101",
+            "target": "1000134",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000105",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000106",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000109",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000110",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000113",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000114",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000123",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000104",
+            "target": "1000132",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000106",
+            "target": "1000107",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000106",
+            "target": "1000108",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000110",
+            "target": "1000111",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000110",
+            "target": "1000112",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000114",
+            "target": "1000115",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000114",
+            "target": "1000116",
+            "key": 0
+        },
+        {
+            "label": "COMPUTED_FROM",
+            "source": "1000115",
+            "target": "1000118",
+            "key": 0
+        },
+        {
+            "label": "COMPUTED_FROM",
+            "source": "1000115",
+            "target": "1000119",
+            "key": 0
+        },
+        {
+            "label": "COMPUTED_FROM",
+            "source": "1000115",
+            "target": "1000122",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000116",
+            "target": "1000117",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000116",
+            "target": "1000120",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000117",
+            "target": "1000118",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000117",
+            "target": "1000119",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000120",
+            "target": "1000121",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000120",
+            "target": "1000122",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000123",
+            "target": "1000124",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000123",
+            "target": "1000125",
+            "key": 0
+        },
+        {
+            "label": "COMPUTED_FROM",
+            "source": "1000124",
+            "target": "1000126",
+            "key": 0
+        },
+        {
+            "label": "COMPUTED_FROM",
+            "source": "1000124",
+            "target": "1000129",
+            "key": 0
+        },
+        {
+            "label": "COMPUTED_FROM",
+            "source": "1000124",
+            "target": "1000130",
+            "key": 0
+        },
+        {
+            "label": "COMPUTED_FROM",
+            "source": "1000124",
+            "target": "1000131",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000125",
+            "target": "1000126",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000125",
+            "target": "1000127",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000127",
+            "target": "1000128",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000127",
+            "target": "1000131",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000128",
+            "target": "1000129",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000128",
+            "target": "1000130",
+            "key": 0
+        },
+        {
+            "label": "AST: ",
+            "source": "1000132",
+            "target": "1000133",
+            "key": 0
+        }
+    ]
+}

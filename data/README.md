@@ -16,3 +16,13 @@ Doing so will create another folder called `methods` that has three subfolders `
 
 **NOTE**: Current the JSON files are located in the following path: `~/data/methods/methods/R<1-2-3>/<PROJECT-NAME>/<METHOD-NAME>.json`. Move `R1`, `R2`, and `R3` up one level, so that the path to each JSON file becomes `~/data/methods/R<1-2-3>/<PROJECT-NAME>/<METHOD-NAME>.json`.
 
+### Generating JSON Files for Classes
+
+After the methods' JSON files are extracted, we need to generate JSON files for classes. CONCORD by default output representations at method level. We did so to offer the lowest granularity possible since classes is concept mainly related to OOP.  
+
+To generate classes files run the following command:  
+
+`python3 classes_generator.py`  
+
+By the end of this step, the JSON files will be located in `classes/<REPRESENTATION>/<PROJECT>/<FILE>.json`
+

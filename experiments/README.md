@@ -38,3 +38,4 @@ To generate the initial feature representation of the nodes of each graph we use
 To train models on the `FeatureEnvy` or `MultifacetedAbstraction` smells, run `main_class.py` instead. The paramters are the same, except:
 
 - `root`: should pinpoint to `~/data/classes`.
+- `type`: should be set to "class"

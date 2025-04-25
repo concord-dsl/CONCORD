@@ -1,4 +1,4 @@
-## Dataset for DL Experiments
+## Dataset for Code Smell DL Experiments
 
 This folder contains two major set of files:
 - CSV files that represented the dataset of each code smell. For instance `CC.csv` is that dataset for `ComplexConditional` code smell.
@@ -28,3 +28,6 @@ By the end of this step, the JSON files will be located in `classes/<REPRESENTAT
 
 The classes generation can take a while (up to 3hrs). We have uploaded them on Google Drive too for faster access: https://drive.google.com/file/d/1HtzDoCwBNN7dnFvXkW3WHb0CY9o5eFno/view?usp=sharing
 
+## Dataset for Devign (Vulnerability Detection) dataset
+
+The dataset can be directly downloaded from Google Drive: https://drive.google.com/file/d/1JPJTf2lvOCry88zV3vTBq05f2BZ9Tqhz/view?usp=sharing

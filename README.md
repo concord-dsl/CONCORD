@@ -1,4 +1,4 @@
-# ESEM25: Towards a Domain-Specific Language for Configurable Graph Code Representations of Multilingual Corpora
+# JSS: Towards a Domain-Specific Language for Configurable Graph Code Representations of Multilingual Corpora
 ![Overview of the study](figs/overview.png)
 
 ## Abstract
